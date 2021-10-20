@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex20" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex20</title>
+</head>
+<body>
+    <p><h1> Exibir os trinta primeiros valores da série de Fibonacci. A série: 1, 1, 2, 3, 5, 8, ...</h1></p>
+    <script language="javascript">
+        var num1 = 1;
+        var num2 = 0;
+        document.writeln("<table border = '1' align = 'center'>")   
+            document.writeln("1, ") 
+            for (var i = 1; i < 31; i++) {
+
+                num1 = num1 + num2;
+            num2 = num1 - num2;
+            document.writeln(num1 + ", ") 
+
+            }
+    </script>
+    
+</body>
+</html>

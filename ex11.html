@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex11" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex11</title>
+</head>
+<body>
+    <p><h1>11. Uma escola com cursos em regime semestral, realiza duas avaliações durante o semestre e calcula a média do aluno, da seguinte maneira: </h1></p>
+    <script language="javascript">
+        var n1, n2, total;
+        
+            n1 = parseFloat(window.prompt("Informe a 1ª nota:")); 
+            n2 = parseFloat(window.prompt("Informe a 2ª nota:"));
+
+        document.writeln("<p>A conta para descobrir a media das notas é (nota1 + 2 x nota2) / 3, logo: (" + n1 + " + 2 x " + n2 + ") / 3");
+    
+        total = (n1 + 2 * n2) / 3;
+
+        document.write("<p>A média é de " + total +" logo: ");
+            if (total > 6) {
+                document.write("esse aluno(a) está aprovado");
+            }
+            else{
+                document.write("esse aluno(a) está reprovado");
+            }
+
+    </script>
+    
+</body>
+</html>

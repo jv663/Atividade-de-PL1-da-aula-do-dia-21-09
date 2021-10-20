@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex10" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex10</title>
+</head>
+<body>
+    <p><h1>10. Solicitar a digitação de dois valores quaisquer. Exibir o maior deles, se existir, caso contrário, enviar mensagem avisando que os números são idênticos.</h1></p>
+    <script language="javascript">
+        var n1, n2, maior, inf;
+        
+            n1 = parseFloat(window.prompt("Informe o primeiro número:")); 
+            n2 = parseFloat(window.prompt("Informe o segundo número:")); 
+
+    
+            if (n1 > n2) {
+                maior = n1
+                document.write("Dos números informados o maior deles é o primeiro logo o maior número é: " + maior + "</p>");
+            }
+            else if (n1 < n2){
+                maior = n2 
+                document.write("Dos números informados o maior deles é o segundo logo o maior número é: " + maior + "</p>");
+            }
+
+            else{
+                document.write("Os dois números tem o mesmo valor, no caso: " + n1);
+            }
+
+
+
+    </script>
+    
+</body>
+</html>

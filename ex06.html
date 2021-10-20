@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex06" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex06</title>
+</head>
+<body>
+    <p><h1>6. Calcular e exibir a média geométrica de dois valores quaisquer que serão digitados.</h1></p>
+    <script language="javascript">
+        var n1, n2, total;
+        
+            n1 = parseFloat(window.prompt("Informe o 1º número:")); 
+            n2 = parseFloat(window.prompt("Informe o 2º número:"));
+
+        document.writeln("<p>A conta para descobrir a media geometrica é preciso mutiplicar o quadrado dos dois numeros, logo: √" + n1 + " x " + n2);
+    
+        total = Math.sqrt(n1 * n2);
+
+        document.write("<p>A média geometrica é de " + total + "</p>");
+
+    </script>
+    
+</body>
+</html>

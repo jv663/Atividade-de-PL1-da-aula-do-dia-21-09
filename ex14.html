@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex14" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex14</title>
+</head>
+<body>
+    <p><h1>Verificar se três valores quaisquer (A, B, C) que serão digitados formam ou não um triângulo retângulo.</h1></p>
+    <script language="javascript">
+        var a, b, c, total;
+        
+            a = parseFloat(window.prompt("Informe o 1° cateto:")); 
+            b = parseFloat(window.prompt("Informe o 2° cateto:"));
+            c = parseFloat(window.prompt("Informe a hipotenusa:"));
+
+        document.writeln("<p>A conta para descobrir se um triangulo é um triangulo retangulo é hipotnusa² = cateto1² + cateto², logo: " + c + "² = " + a +"² + " + c + "²? </p>");
+    
+
+        if ((c * c) == (a * a) + (b * b)){
+            document.writeln("<p>Esse é definitivamente um triangulo retangulo</p>");
+        }
+        else{
+            document.writeln("<p>Esse não é um triangulo retangulo</p>");
+            }
+        
+
+    </script>
+    
+</body>
+</html>

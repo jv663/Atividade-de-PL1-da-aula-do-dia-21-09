@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex13" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex13</title>
+</head>
+<body>
+    <p><h1>13. A partir de três valores que serão digitados, verificar se formam ou não um triângulo. Em caso positivo, exibir sua classificação: “Isósceles, escaleno ou equilátero”.</h1></p>
+    <script language="javascript">
+        var a, b, c, total;
+        
+            a = parseFloat(window.prompt("Informe o 1° lado:")); 
+            b = parseFloat(window.prompt("Informe o 2° lado:"));
+            c = parseFloat(window.prompt("Informe o 3° lado:"));
+
+        document.writeln("<p>Para descobrir se um triangulo é verdadeiro é preciso que a soma de qualquer um de dois lados seja maior que o terceiro, logo: " + a + " + " + b + " > " + c + " ou " + b + " + " + c + " > " + a);
+    
+
+        if (a + b <= c || a + c <= b || b + c <= a){
+            document.writeln("<p>Esse triangulo não é válido</p>");
+        }
+        else{
+            if (a == b == c) {
+                document.writeln("<p>Esse triangulo é valido e é um triangulo equilatero</p>"); 
+            }
+            else if (a != b != c || a != c) {
+                document.writeln("<p>Esse triangulo é valido e é um triangulo escaleno</p>");
+            }
+            else{
+                document.writeln("<p>Esse triangulo é valido e é um triangulo isoceles</p>"); 
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>

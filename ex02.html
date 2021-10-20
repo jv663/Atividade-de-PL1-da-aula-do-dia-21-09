@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex02" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex02</title>
+</head>
+<body>
+    <p><h1>2. Calcular e exibir a área de um quadrado, a partir do valor de sua aresta que será digitado.</h1></p>
+    <script language="javascript">
+        var aresta, total;
+        
+        aresta = parseFloat(window.prompt("Informe o valor da aresta do quadrado:"));
+
+        document.writeln("<p>A conta para descobrir a área de um quadrado dessa forma é aresta², logo: " + aresta + "²" + "</p>");
+    
+        total = aresta * aresta;
+
+        document.write("<td>A área do quadrado é de: " + total + "</td>");
+
+    </script>
+    
+</body>
+</html>

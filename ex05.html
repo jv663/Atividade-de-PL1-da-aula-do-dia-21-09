@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex05" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex05</title>
+</head>
+<body>
+    <p><h1>5. Calcular e exibir a média aritmética de quatro valores quaisquer que serão digitados.</h1></p>
+    <script language="javascript">
+        var n1, n2, n3, n4, total;
+        
+            n1 = parseFloat(window.prompt("Informe a 1ª nota:")); 
+            n2 = parseFloat(window.prompt("Informe a 2ª nota:"));
+            n3 = parseFloat(window.prompt("Informe a 3ª nota:"));
+            n4 = parseFloat(window.prompt("Informe a 4ª nota:"));
+
+        document.writeln("<p>A conta para descobrir a media das notas é preciso somar todas e dividir por 4, logo: " + n1 + " + " + n2 + " + " + n3 + " + " + n4 + " / 4");
+    
+        total = (n1 + n2 + n3 + n4) / 4;
+
+        document.write("<p>A média é de " + total + "</p>");
+
+    </script>
+    
+</body>
+</html>

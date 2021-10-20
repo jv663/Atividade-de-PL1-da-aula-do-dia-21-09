@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex15" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex15</title>
+</head>
+<body>
+    <p><h1>15. Entrar com dois valores, onde o segundo deverá ser maior que o primeiro. Caso contrário solicitar novamente apenas o segundo valor. </h1></p>
+    <script language="javascript">
+        var n1, n2;
+        
+            n1 = parseFloat(window.prompt("Informe o 1° número:")); 
+            n2 = parseFloat(window.prompt("Informe o 2° número (ele tem que ser maior que o 1°):"));
+
+            if (n2 < n1) {
+                window.alert(n2 + " é menor que " + n1);
+                n2 = parseFloat(window.prompt("Informe um numero maior que " + n1 + ":"));  
+            }
+            else{
+                window.alert("Ok, " + n2 + " é menor que " + n1);
+            }
+
+        
+
+    </script>
+    
+</body>
+</html>

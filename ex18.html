@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Ex18" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Ex 18</title>
+</head>
+<body>
+    <div><h1>18. Exibir a tabuada dos valores de um a vinte, no intervalo de um a dez. Gerar as tabuadas em tabelas individuais. As tabuadas deverão estar em 4 linhas com 4 colunas cada, totalizando as 20 tabuadas.</h1></div>
+        
+        <table>
+    <script language="javascript">
+        var tabuada;
+        document.writeln("<table border='0' width='1000' height= '2000' align ='center'>");
+        for (var i = 1; i < 21; i++) {
+            if (i % 4 == 0) {
+                
+                document.writeln("<td>")
+                    document.writeln("<table border='1' align ='center'>");
+
+                for (var j = 1; j < 11; j++) {
+                    document.writeln("<tr>");
+                    document.writeln("<td>" + i + " x " + j + " = " + i * j + "</td>"); 
+                    document.writeln("</td>");
+                }
+                document.writeln("</table>");
+                    document.writeln("</td>");
+                    if (i > 4) {
+                    document.writeln("</tr>");
+                }
+
+                    document.writeln("<tr>");
+            }
+            else{
+                document.writeln("<td>");
+                    document.writeln("<table border='1' align ='center'>");
+                for (var j = 1; j < 11; j++) {
+                    document.writeln("<tr>");
+                    document.writeln("<td>" + i + " x " + j + " = " + i * j + "</td>"); 
+                    document.writeln("</tr>");
+                }
+                document.writeln("</table>");
+                document.writeln("</td>");
+            }
+            
+        }
+        document.writeln("</table>");
+        
+    </script>
+        </table>
+
+</body>
+</html>

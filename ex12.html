@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex12" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex12</title>
+</head>
+<body>
+    <p><h1>12. Solicitar a digitação do peso e da altura de uma determinada pessoa. Após a digitação, exibir se esta pessoa está ou não com seu peso ideal. Veja tabela da relação peso/altura². </h1></p>
+    
+    <script language="javascript">
+        var peso, altura, IMC;
+        
+            peso = parseFloat(window.prompt("Informe o peso:")); 
+            altura = parseFloat(window.prompt("Informe a altura:"));
+
+        document.writeln("<p>A conta para descobrir o IMC é peso / altura², logo: " + peso + " / " + altura + "²");
+    
+        IMC = peso / (altura * altura);
+
+        document.write("<p>A média é de " + IMC +" logo: ");
+
+   
+    document.writeln("<table border = '1'>");
+        document.writeln("<tr>");
+            document.writeln("<td align='center'>Relação peso/altura² (R)</td>");
+            document.writeln("<td align='center'>Mensagem</td>");
+        document.writeln("</tr>");
+        document.writeln("<tr>");
+            document.writeln("<td align='center'>R < 20</td>");
+
+            if (IMC < 20) {
+                document.writeln("<td align='center'style='background-color:#00ff00;'>Abaixo do peso</td>");   
+            }
+            else{
+                document.writeln("<td align='center'>Abaixo do peso</td>");
+            }
+            
+        document.writeln("</tr>")
+        document.writeln("<tr>")
+            document.writeln("<td align='center'>20 <= R < 25</td>");
+            if (IMC >= 20 && IMC < 25) {
+                document.writeln("<td align='center'style='background-color:#00ff00;'>Peso ideal</td>");   
+            }
+            else{
+                document.writeln("<td align='center'>Peso ideal</td>");
+            }
+            
+        document.writeln("</tr>");
+        document.writeln("<tr>");
+            document.writeln("<td align='center'>R >= 25</td>");
+
+            if (IMC >= 25) {
+                document.writeln("<td align='center'style='background-color:#00ff00;'>Acima do peso</td>");   
+            }
+            else{
+                document.writeln("<td align='center'>Acima do pesol</td>");
+            }
+        document.writeln("</tr>");
+    document.writeln("</table>");
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex04" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex04</title>
+</head>
+<body>
+    <p><h1>4. A partir dos valores da base e altura de um triângulo, calcular e exibir sua área.</h1></p>
+    <script language="javascript">
+        var base, altura, total;
+        
+        base = parseFloat(window.prompt("Informe o valor da base do triangulo:"));
+        altura = parseFloat(window.prompt("Informe o valor da altura do triangulo:"));
+
+        document.writeln("<p>A conta para descobrir a área de um triangulo é base x altura / 2, logo: " + base + " x " + altura + " / 2 <p>");
+    
+        total = base * altura / 2;
+
+        document.write("<p>A área do triangulo é de " + total + "</p>");
+
+    </script>
+    
+</body>
+</html>

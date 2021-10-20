@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex08" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex08</title>
+</head>
+<body>
+    <p><h1>8. Solicitar a digitação do valor de uma temperatura em graus Celsius, calcular e exibir sua temperatura equivalente em Fahrenheit.</h1></p>
+    <script language="javascript">
+        var celsius, F;
+        
+            celsius = parseFloat(window.prompt("Informe a quantidade de graus celsius:")); 
+
+        document.writeln("<p>A conta para converter celsius em fahrenheit é (celsius × 9 / 5) + 32, logo: (" + celsius + " x 9 / 5) + 32");
+    
+        F = (celsius * 9 / 5) + 32;
+
+        document.write("<p>O valor em fahrenheit é de: " + F + "°F </p>");
+
+    </script>
+    
+</body>
+</html>
